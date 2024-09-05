@@ -8,6 +8,8 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-background-features: rgba(215, 215, 224, 0.2);
 }
 
 [data-theme='dark'] {
@@ -19,6 +21,8 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-features: #1b1b1d;
 }
 .banner-content-container{
   max-width: 50rem;
