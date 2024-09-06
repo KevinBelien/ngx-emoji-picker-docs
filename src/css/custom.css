@@ -10,6 +10,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-background-features: rgba(215, 215, 224, 0.2);
+
+  --ifm-h1-font-size: 2.3rem;
+  --ifm-h2-font-size: 1.8rem;
+  --ifm-h3-font-size: 1.25rem;
 }
 
 [data-theme='dark'] {
@@ -23,11 +27,25 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   --ifm-background-features: #1b1b1d;
+  
 }
 .banner-content-container{
   max-width: 50rem;
+  margin: 6rem auto 7.5rem;
 }
 
 .hero__subtitle{
   font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.25rem; /* Adjust this value to your desired font size */
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
 }
