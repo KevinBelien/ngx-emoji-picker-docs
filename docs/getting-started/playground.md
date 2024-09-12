@@ -6,6 +6,6 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-import PlaygroundCard from '@site/src/components/PlaygroundCard';
+import ShowcaseCard from '@site/src/components/ShowcaseCard';
 
-<PlaygroundCard src="https://stackblitz.com/edit/stackblitz-starters-zzr51s?embed=1&file=src%2Fmain.ts"></PlaygroundCard>
+<ShowcaseCard src="https://stackblitz.com/edit/stackblitz-starters-zzr51s?embed=1&file=src%2Fmain.ts" height="900"></ShowcaseCard>
