@@ -8,5 +8,4 @@ hide_table_of_contents: true
 
 import PlaygroundDemo from '@site/src/components/PlaygroundDemo';
 
-<PlaygroundDemo></PlaygroundDemo> 
-
+<PlaygroundDemo />
