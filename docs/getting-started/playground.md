@@ -6,6 +6,6 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-import PlaygroundDemo from '@site/src/components/PlaygroundDemo';
+import PlaygroundCard from '@site/src/components/PlaygroundCard';
 
-<PlaygroundDemo />
+<PlaygroundCard src="https://stackblitz.com/edit/stackblitz-starters-zzr51s?embed=1&file=src%2Fmain.ts"></PlaygroundCard>
