@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
   title: 'ChitChat',
-  tagline: 'A seamless, open-source emoji picker toolkit for Angular, designed to integrate effortlessly into any project, with full support for mobile and web.',
+  tagline: 'An open-source emoji picker UI toolkit for Angular, designed to integrate effortlessly into any project, with full support for mobile and web.',
   favicon: 'img/logo.svg',
 
   // Set the production url of your site here
