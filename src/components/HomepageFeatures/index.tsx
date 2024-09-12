@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/light-dark_mode___icon.svg').default,
     description: (
     <>
-      Give your users light and dark theme choices. Learn more in the <a href="/docs/getting-started"  style={{ fontWeight: 'bold' }}>styling section</a> of the docs.
+      Give your users light and dark theme choices. Learn more in the <a href="/docs/getting-started"  style={{ fontWeight: 'bold' }}>theming section</a> of the docs.
 
     </>
     ),
@@ -59,7 +59,7 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className="row" style={{rowGap: '3rem'}}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

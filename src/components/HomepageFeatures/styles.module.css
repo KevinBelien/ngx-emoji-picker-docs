@@ -4,7 +4,10 @@
   padding: 2rem 0;
   width: 100%;
   background-color: var(--ifm-background-features);
+  margin-block: 3rem;
 }
+
+
 
 .featureSvg {
   height: 75px;
