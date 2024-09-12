@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlaygroundDemo: React.FC = () => {
+const PlaygroundDemo = () => {
   return (
     <iframe
       src="https://stackblitz.com/edit/stackblitz-starters-zzr51s?embed=1&file=src%2Fmain.ts"
