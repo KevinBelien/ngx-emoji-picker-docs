@@ -9,7 +9,7 @@ The library is a comprehensive Angular library designed to provide everything yo
 
 
 ## Before installing
-Make sure that the versions of Angular in your project are compatible with the emoji picker library. Refer to the [**version compatibility**](/docs/reference/version-compatibility) for version compatibility details.
+Make sure that the versions of Angular in your project are compatible with the emoji picker library. Refer to the [**version compatibility**](/docs/version-compatibility) for version compatibility details.
 
 The emoji picker depends on **Angular CDK**. Ensure you have it installed in your project. If not, you can add it by running the following command:
 ```bash
@@ -79,7 +79,7 @@ The core styles of the components are provided as necessary CSS files to ensure 
 @import '@chit-chat/ngx-emoji-picker/styles/core.css';
 ```
 
-For more information on styling and how to customize SCSS variables like colors and fonts, please refer to the [**Styles section**](/docs/reference/styles).
+For more information on styling and how to customize SCSS variables like colors and fonts, please refer to the [**Styling section**](/docs/styling).
 
 ## Usage
 
