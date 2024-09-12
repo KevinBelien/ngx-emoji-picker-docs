@@ -26,4 +26,4 @@ No public methods available for this component.
 ## CSS Custom Properties
 | Property                                      | Description                                                                 |
 |-----------------------------------------------|-----------------------------------------------------------------------------|
-| `--ch-primary-color`                          | Fill color of the icon. 
+| `--ch-text-color`                          | Fill color of the icon. 

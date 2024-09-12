@@ -25,8 +25,9 @@ The TextBox component is a flexible and customizable text input field that suppo
 | `onValueChanged`   | `ValueChangeEvent`       | Emits when the value of the text box changes. Includes the new value, original event, and action. |
 
 ## Methods
-No public methods available for this component.
-
+| Method              | Description                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| `clear()`           | clear the text input                                                                                |
 
 ## CSS Custom Properties
 

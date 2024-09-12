@@ -51,6 +51,6 @@ The EmojiPicker component is a highly customizable tool that allows users to sel
 | `--ch-skintone-picker-background`             | Background color of the emoji skintone dialog.                                     |
 | `--ch-emoji-variant-indicator-color`          | Color of the emoji variant indicator.                                        |
 | `--ch-emoji-variant-indicator-color-hover`    | Color of the emoji variant indicator when hovered.                           |
-| `--ch-color-scroll`                           | color of the scrollbar                           |
+| `--ch-color-scroll`                           | Color of the scrollbar                           |
 | `--ch-color-scroll-hover`                     | Color of the scrollbar when hovering over the scrollbar                   |
 

@@ -160,7 +160,7 @@ Buttons without having any label.
 ```
 
 ## States
-The button component provides various configuration options to control how it responds to user interactions. You can disable specific interaction states such as hover, focus, and active, or fully disable the button. This section demonstrates how the button behaves with different state configurations.
+The button component provides various configuration options to control how it responds to user interactions. You can disable specific interaction states such as hover, focus, and active, or fully disable the button.
 
 <ShowcaseCard  src="https://chitchat-showcase.netlify.app/button-states" width="100%" height="105px"></ShowcaseCard>
 
@@ -242,7 +242,10 @@ The button component allows for complete customization of its content. You can i
 | `onClick`  | `MouseEvent`   | Callback to execute when the button is clicked. The event object is passed as a parameter. |
 
 ## Methods
-No public methods available for this component.
+
+| Method  | Description                                                           |
+|---------|-----------------------------------------------------------------------|
+| `getNativeElement()` | Returns the `HTMLElement` of the button component.       |
 
 ## CSS Custom Properties
 
