@@ -9,6 +9,8 @@ The TextBox component is a flexible and customizable text input field that suppo
 ## Properties
 | Property           | Type                                                      | Description                                                                                       | Default     |
 |--------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------|-------------|
+| `height`                 | `number` \| `string`                                                          | Specifies the height of the text box.                                                               | `'auto'`              |
+| `width`                  | `number` \| `string`                                                          | Specifies the width of the text box.                                                                | `'auto'`     
 | `value`            | `string`                                                  | The input's current value. This is a two-way binding property.                                     | `''`        |
 | `autofocus`        | `boolean`                                                 | Specifies whether the textbox should automatically receive focus when the page loads.              | `false`     |
 | `mode`             | `'text' \| 'search' \| 'password'`                        | Specifies the mode of the textbox, determining its type and behavior.                              | `'text'`    |

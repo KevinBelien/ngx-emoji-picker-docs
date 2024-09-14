@@ -5,25 +5,51 @@ sidebar_label: Installation
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 The library is a comprehensive Angular library designed to provide everything you need to implement emoji pickers in your project. It offers fully customizable components that work seamlessly on both mobile and web platforms.
 
 
 ## Before installing
-Make sure that the versions of Angular in your project are compatible with the emoji picker library. Refer to the [**version compatibility**](/docs/version-compatibility) for version compatibility details.
+Ensure that your project's Angular versions are compatible with the emoji picker library by checking the[**version compatibility**](/docs/version-compatibility) guidelines.
 
-The emoji picker depends on **Angular CDK**. Ensure you have it installed in your project. If not, you can add it by running the following command:
+Since the emoji picker relies on the **Angular CDK**, make sure it's installed in your project. If it's not, you can add it by running the following command:
+<Tabs>
+<TabItem value="ng" label="NG">
 ```bash
 ng add @angular/cdk
 ```
+</TabItem>
+<TabItem value="npm" label="NPM">
+```bash
+npm i @angular/cdk --save
+```
+</TabItem>
+<TabItem value="yarn" label="YARN">
+```bash
+yarn add @angular/cdk
+```
+</TabItem>
+</Tabs>
 
 
 ## Download
 
 The emoji picker is available for download on [npm](https://www.npmjs.com/package/@chit-chat/ngx-emoji-picker).
 
+<Tabs>
+<TabItem value="npm" label="NPM">
 ```bash
 npm i @chit-chat/ngx-emoji-picker
 ```
+</TabItem>
+<TabItem value="yarn" label="YARN">
+```bash
+yarn add @chit-chat/ngx-emoji-picker
+```
+</TabItem>
+</Tabs>
 
 
 ## Providing the Library in Your Project
