@@ -98,7 +98,7 @@ The emoji size can be customized using predefined options. *Please don't modify 
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350" [emojiSize]="selectedSize()"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" [emojiSize]="selectedSize()" [autofocus]="false"></ch-emoji-picker>
     </div>
 
     <div class="form">
@@ -176,7 +176,7 @@ The emoji picker supports customizable categories, respecting the order in the p
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350" [emojiCategories]="emojiCategories"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" [emojiCategories]="emojiCategories" [autofocus]="false"></ch-emoji-picker>
     </div>
 </div>
 ```
@@ -231,7 +231,7 @@ The category bar in the emoji picker can be positioned either at the top or bott
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350" categoryBarPosition="bottom"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" categoryBarPosition="bottom" [autofocus]="false"></ch-emoji-picker>
     </div>
 </div>
 ```
@@ -243,7 +243,7 @@ The emoji picker can be used without a header, which includes hiding the search 
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350" [searchEnabled]="false" skintoneSetting="individual"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" [searchEnabled]="false" skintoneSetting="individual" [autofocus]="false"></ch-emoji-picker>
     </div>
 </div>
 ```
@@ -257,7 +257,7 @@ The emoji picker can display suggestions based on recent or frequently used emoj
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350" [suggestionOptions]="suggestionOptions()"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" [suggestionOptions]="suggestionOptions()" [autofocus]="false"></ch-emoji-picker>
     </div>
 
     <div class="form">
@@ -355,7 +355,7 @@ The emoji picker allows customization of skintone settings with the following op
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350" [skintoneSetting]="selectedSetting()"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" [skintoneSetting]="selectedSetting()" [autofocus]="false"></ch-emoji-picker>
     </div>
 
     <div class="form">
@@ -445,6 +445,7 @@ The emoji picker supports custom storage options for recent and frequent emojis,
             [height]="350"
             [storageOptions]="storageConfig()"
             [skintoneSetting]="skintoneSetting()"
+            [autofocus]="false"
             (onEmojiSelected)="handleEmojiSelected($event)"
             (onGlobalSkintoneChanged)="handleGlobalSkintoneChanged($event)"
         ></ch-emoji-picker>
@@ -710,7 +711,7 @@ The emoji picker supports setting a custom locale, enabling support for differen
 ```html
 <div class="showcase-container row-showcase justify-center">
     <div class="emoji-picker-container">
-        <ch-emoji-picker [width]="350" [height]="350"></ch-emoji-picker>
+        <ch-emoji-picker [width]="350" [height]="350" [autofocus]="false"></ch-emoji-picker>
     </div>
 </div>
 ```
@@ -773,7 +774,7 @@ export class EmojiPickerLocalizationComponent implements OnInit {
 | `emojiSize`              | `'xs' \| 'sm' \| 'default' \| 'lg' \| 'xl'`                        | Specifies the display size of the emojis.<br/>*Note: Avoid modifying the emoji size through CSS, as this can lead to unexpected behavior.*                                                               | `'default'`        |
 | `searchEnabled`              | `boolean`                        | Specifies if the searchbar is visible.                                                               | `true`        |
 | `suggestionOptions`      | [`SuggestionConfig`](#suggestionconfig)                            | Specifies the options for the emoji suggestions (e.g., recent or frequent emojis).                      | `{ mode: 'recent', limitToShow: 50 }` |
-| `storageOptions`         | [`StorageConfig`](#storageconfig)                                  | Specifies options for storing recent emojis and skintone preferences.                                   | `undefined`        |
+| `storageOptions`         | [`StorageConfig`](#storageconfig) \| `undefined`                                  | Specifies options for storing recent emojis and skintone preferences.                                   | `undefined`<br/>*This will automatically utilize local storage for all storage operations*       |
 | `categoryBarPosition`    | `'top' \| 'bottom'`                                                | Specifies the location of the category bar in the emoji picker.                                         | `'top'`            |
 | `scrollbarVisible`       | `boolean`                                                          | Determines whether the scrollbar should be visible.                                                     | `true`             |
 | `emojiCategories`        | `Array<EmojiCategory>`                                             | Specifies the categories of emojis included in the picker. The order will be respected, except for suggestion. Suggestions will always be shown as first category when specified.                 | `['suggestions', 'smileys-people', 'animals-nature', 'food-drink', 'travel-places', 'objects', 'activities', 'symbols', 'flags']`|
@@ -784,7 +785,7 @@ export class EmojiPickerLocalizationComponent implements OnInit {
 | Property        | Type                                              | Description                                                    |
 |-----------------|---------------------------------------------------|----------------------------------------------------------------|
 | `mode`          | `'recent' \| 'frequent'`                          | Mode for displaying emoji suggestions.                         |
-| `limitToShow`   | `number`                                           | The number of suggestion emojis to show.                       |
+| `limitToShow`   | `number` \| `undefined`                                         | The number of suggestion emojis to show. Defaults to `50`                    |
 
 ### `StorageConfig`
 
