@@ -704,7 +704,7 @@ export class EmojiPickerDialogComponent {
 ## Localization
  The emoji picker provides localization support for both **display text** and **filtering emojis**. It comes with built-in localization files, which you can easily use to switch between languages. Additionally, you have the flexibility to provide your own custom localization files or selectively overwrite emojis from the built-in files to better suit your application's needs. For more information on configuring localization and adding your own locale files, see [Localization section](/docs/localization).
 
-*NOTE: By default, emojis are always filtered using both **English** and the **selected language**. If you prefer not to provide English keywords alongside the localized ones, you will need to unload the English locale. This ensures that only the keywords in the selected language are used for filtering.*
+*NOTE: By default, emojis are always filtered using both **English** and the **selected language**. If you prefer not to provide English keywords alongside the localized ones, you will need to [unload](/docs/localization#unloading-translations) the English locale. This ensures that only the keywords in the selected language are used for filtering.*
 
 
 
