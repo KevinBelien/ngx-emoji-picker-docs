@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Emoji picker library for angular">
+      description="An open-source emoji picker UI toolkit for Angular, designed to integrate effortlessly into any project, with full support for mobile and web.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
