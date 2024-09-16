@@ -12,9 +12,9 @@ The library is a comprehensive Angular library designed to provide everything yo
 
 
 ## Before installing
-Ensure that your project's Angular versions are compatible with the emoji picker library by checking the[**version compatibility**](/docs/version-compatibility) guidelines.
+Ensure that your project's Angular versions are compatible with the emoji picker library by checking the [**version compatibility**](/docs/version-compatibility) guidelines.
 
-Since the emoji picker relies on the **Angular CDK**, make sure it's installed in your project. If it's not, you can add it by running the following command:
+Since the emoji picker relies on the **Angular CDK** library, make sure it's installed in your project. If it's not, you can add it by running the following command:
 <Tabs>
 <TabItem value="ng" label="NG">
 ```bash

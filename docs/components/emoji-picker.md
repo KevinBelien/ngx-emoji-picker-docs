@@ -90,7 +90,7 @@ export class EmojiPickerBasicComponent {
 </Tabs>
 
 ## Sizing
-The emoji size can be customized using predefined options. *Please don't modify the emoji size through CSS, because this will cause unexpected behavior.*
+The emoji size can be customized using predefined options. The emojisize will be calculated with he specified size option and the width of the viewport.<br/><br/>*Note: Don't modify the emoji size through CSS, because this will cause unexpected behavior.*
 
 <ShowcaseCard  src="https://chitchat-showcase.netlify.app/emoji-picker-sizes" width="100%" height="423px"></ShowcaseCard>
 <Tabs>
@@ -702,8 +702,12 @@ export class EmojiPickerDialogComponent {
 </Tabs>
 
 ## Localization
-The emoji picker supports setting a custom locale, enabling support for different languages. The picker adjusts seamlessly to the selected locale, updating the interface language and ensuring that emojis are filtered in both English and the selected language. For more information on configuring localization and adding your own locale files, see [Localization section](/docs/localization).
-<br/><br/>*Note: The translation files for emoji keywords are dynamically imported when searching. It's not possible to provide you're own translation files for keywords.*
+ The emoji picker provides localization support for both **display text** and **filtering emojis**. It comes with built-in localization files, which you can easily use to switch between languages. Additionally, you have the flexibility to provide your own custom localization files or selectively overwrite emojis from the built-in files to better suit your application's needs. For more information on configuring localization and adding your own locale files, see [Localization section](/docs/localization).
+
+*NOTE: By default, emojis are always filtered using both **English** and the **selected language**. If you prefer not to provide English keywords alongside the localized ones, you will need to unload the English locale. This ensures that only the keywords in the selected language are used for filtering.*
+
+
+
 
 <ShowcaseCard  src="https://chitchat-showcase.netlify.app/emoji-picker-localization" width="100%" height="423px"></ShowcaseCard>
 <Tabs>
@@ -720,7 +724,7 @@ The emoji picker supports setting a custom locale, enabling support for differen
 ```typescript
 import { Component, inject, OnInit } from '@angular/core';
 import { EmojiPickerComponent } from '@chit-chat/ngx-emoji-picker/lib/components/emoji-picker';
-import { nlTranslations, TranslationService } from '@chit-chat/ngx-emoji-picker/lib/localization';
+import { nlEmojiKeywordTranslations, nlTranslations, TranslationService } from '@chit-chat/ngx-emoji-picker/lib/localization';
 
 @Component({
     selector: 'ch-emoji-picker-localization',
@@ -734,6 +738,7 @@ export class EmojiPickerLocalizationComponent implements OnInit {
 
     ngOnInit(): void {
         this.translationService.loadTranslations('nl', nlTranslations);
+        this.translationService.loadEmojiKeywordTranslations('nl', nlEmojiKeywordTranslations);
         this.translationService.setLanguage('nl');
     }
 }
@@ -792,7 +797,7 @@ export class EmojiPickerLocalizationComponent implements OnInit {
 | Property              | Type                                                                                           | Description                                                     |
 |-----------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | `suggestionEmojis`    | [`StorageOptions<string[]>`](#storageoptionst)                                                   | Configuration for storing suggestion emojis where `string[]` is the array of unique identifiers of emojis.                    |
-| `globalSkintone`      | [`StorageOptions<Skintone>`](#storageoptionst)  | Configuration for storing global skintone preference Where `Skintone` can be one of these values `'default'` \| `'light'` \| `'medium-light'` \| `'medium'` \| `'medium-dark'` \| `'dark'`.           |
+| `globalSkintone`      | [`StorageOptions<Skintone>`](#storageoptionst)  | Configuration for storing global skintone preference. `Skintone` can be one of these values `'default'` \| `'light'` \| `'medium-light'` \| `'medium'` \| `'medium-dark'` \| `'dark'`.           |
 | `individualSkintones` | [`StorageOptions`](#storageoptionst)\<[`IndividualEmojiSkintone[]`](#individualemojiskintone)>     | Configuration for storing individual emoji skintones.           |
          
 
