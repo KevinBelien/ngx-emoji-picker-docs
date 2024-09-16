@@ -706,9 +706,6 @@ export class EmojiPickerDialogComponent {
 
 *NOTE: By default, emojis are always filtered using both **English** and the **selected language**. If you prefer not to provide English keywords alongside the localized ones, you will need to [unload](/docs/localization#unloading-translations) the English locale. This ensures that only the keywords in the selected language are used for filtering.*
 
-
-
-
 <ShowcaseCard  src="https://chitchat-showcase.netlify.app/emoji-picker-localization" width="100%" height="423px"></ShowcaseCard>
 <Tabs>
 <TabItem value="html" label="HTML">

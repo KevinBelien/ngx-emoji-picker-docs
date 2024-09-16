@@ -49,6 +49,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      { name: 'keywords', content: 'emoji, picker, emojipicker, emoji-picker, emoji picker, angular, library' },
+      {name: 'author', content: 'Kevin Beliën'}
+    ],
     // Replace with your project's social card
     navbar: {
       title: 'ChitChat',
