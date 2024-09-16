@@ -50,7 +50,7 @@ const config: Config = {
 
   themeConfig: {
     metadata: [
-      { name: 'keywords', content: 'emoji, picker, emojipicker, emoji-picker, emoji picker, angular, library' },
+      { name: 'keywords', content: 'emoji, picker, emojipicker, emoji-picker, emoji picker, angular, library, chitchat, chat' },
       {name: 'author', content: 'Kevin Beliën'}
     ],
     // Replace with your project's social card
