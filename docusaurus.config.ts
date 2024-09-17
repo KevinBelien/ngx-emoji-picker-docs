@@ -22,6 +22,9 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  trailingSlash: false,  // Set this to false or true, based on whether you want a trailing slash in URLs
+
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -107,10 +110,8 @@ const config: Config = {
     [
       '@docusaurus/plugin-sitemap',
       {
-        changefreq: 'daily',   // Frequency of content changes (adjust as needed)
-        priority: 0.5,         // Priority for search engines
-        trailingSlash: false,  // No trailing slashes in URLs
-        sitemapBaseFileName: 'sitemap',  // The name of the sitemap file
+        changefreq: 'daily', 
+        priority: 0.5,   
       },
     ]
   ]
