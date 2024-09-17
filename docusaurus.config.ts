@@ -22,7 +22,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  trailingSlash: false,  // Set this to false or true, based on whether you want a trailing slash in URLs
 
 
   // Even if you don't use internationalization, you can use this field to set
