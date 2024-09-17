@@ -105,15 +105,6 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 
-  plugins: [
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'daily', 
-        priority: 0.5,   
-      },
-    ]
-  ]
 };
 
 export default config;
