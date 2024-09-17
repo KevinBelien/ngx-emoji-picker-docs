@@ -6,7 +6,7 @@ const config: Config = {
   title: 'ChitChat\'s Emoji Picker',
 
   tagline: 'An open-source emoji picker UI toolkit for Angular, designed to integrate effortlessly into any project, with full support for mobile and web.',
-  favicon: 'img/logo.svg',
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: 'https://ngx-chitchat.netlify.app/',
@@ -57,6 +57,48 @@ const config: Config = {
       { name: 'author', content: 'Kevin Beliën' },
       { name: "google-site-verification", content: "RCXOMQj90jFIg1r3PijiMnUG4suFXyTeslm-nO3kHs0" }
       
+    ],
+
+    headTags: [
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: '/img/logo.svg',
+          type: 'image/svg+xml',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: '/img/logo.png',
+          type: 'image/png',
+        },
+      },
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'icon',
+          href: '/img/logo.ico',
+          type: 'image/x-icon',
+        },
+      },
+      {
+        tagName: 'script',
+        attributes: {
+          type: 'application/ld+json',
+        },
+        innerHTML: `
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://ngx-chitchat.netlify.app",
+          "logo": "https://ngx-chitchat.netlify.app/img/logo.svg",
+          "name": "ChitChat's Emoji Picker"
+        }
+        `,
+      },
     ],
     // Replace with your project's social card
     navbar: {
