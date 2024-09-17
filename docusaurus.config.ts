@@ -53,6 +53,7 @@ const config: Config = {
     metadata: [
       { name: 'keywords', content: 'emoji, picker, emojipicker, emoji-picker, angular, chitchat, chat' },
       { name: 'author', content: 'Kevin Beliën' },
+      { name: "google-site-verification", content: "RCXOMQj90jFIg1r3PijiMnUG4suFXyTeslm-nO3kHs0" }
       
     ],
     // Replace with your project's social card
