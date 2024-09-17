@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
-  title: 'ChitChat\'s emoji picker library',
+  title: 'ChitChat\'s Emoji Picker',
 
   tagline: 'An open-source emoji picker UI toolkit for Angular, designed to integrate effortlessly into any project, with full support for mobile and web.',
   favicon: 'img/logo.svg',
