@@ -102,6 +102,18 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'daily',   // Frequency of content changes (adjust as needed)
+        priority: 0.5,         // Priority for search engines
+        trailingSlash: false,  // No trailing slashes in URLs
+        sitemapBaseFileName: 'sitemap',  // The name of the sitemap file
+      },
+    ]
+  ]
 };
 
 export default config;

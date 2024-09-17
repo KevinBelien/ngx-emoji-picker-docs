@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     description: (
    <>
       Fully supports localization, including filtering emojis. 
-      Learn more in the <a href="/docs/getting-started"  style={{ fontWeight: 'bold' }}>localization section</a> of the docs.
+      Learn more in the <a href="/docs/localization"  style={{ fontWeight: 'bold' }}>localization section</a> of the docs.
     </>
     ),
   },
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/light-dark_mode___icon.svg').default,
     description: (
     <>
-      Give your users light and dark theme choices. Learn more in the <a href="/docs/getting-started"  style={{ fontWeight: 'bold' }}>theming section</a> of the docs.
+      Give your users light and dark theme choices. Learn more in the <a href="/docs/styling"  style={{ fontWeight: 'bold' }}>styling section</a> of the docs.
 
     </>
     ),
