@@ -59,47 +59,7 @@ const config: Config = {
       
     ],
 
-    headTags: [
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/logo.svg',
-          type: 'image/svg+xml',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/logo.png',
-          type: 'image/png',
-        },
-      },
-      {
-        tagName: 'link',
-        attributes: {
-          rel: 'icon',
-          href: '/img/logo.ico',
-          type: 'image/x-icon',
-        },
-      },
-      {
-        tagName: 'script',
-        attributes: {
-          type: 'application/ld+json',
-        },
-        innerHTML: `
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "url": "https://ngx-chitchat.netlify.app",
-          "logo": "https://ngx-chitchat.netlify.app/img/logo.svg",
-          "name": "ChitChat's Emoji Picker"
-        }
-        `,
-      },
-    ],
+   
     // Replace with your project's social card
     navbar: {
       title: 'ChitChat',
@@ -132,6 +92,24 @@ const config: Config = {
         },
       ],
     },
+
+     headTags: [
+      {
+        tagName: 'script',
+        attributes: {
+          type: 'application/ld+json',
+        },
+        innerHTML: `
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://ngx-chitchat.netlify.app",
+          "logo": "https://ngx-chitchat.netlify.app/img/logo.svg",
+          "name": "ChitChat's Emoji Picker"
+        }
+        `,
+      },
+    ],
     footer: {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} ChitChat.`,
