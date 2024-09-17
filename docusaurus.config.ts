@@ -99,15 +99,14 @@ const config: Config = {
         attributes: {
           type: 'application/ld+json',
         },
-        innerHTML: `
-        {
+        innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://ngx-chitchat.netlify.app",
           "logo": "https://ngx-chitchat.netlify.app/img/logo.svg",
           "name": "ChitChat's Emoji Picker"
-        }
-        `,
+        })
+        ,
       },
     ],
     footer: {
