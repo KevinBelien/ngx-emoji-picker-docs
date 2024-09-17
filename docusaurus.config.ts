@@ -6,7 +6,7 @@ const config: Config = {
   title: 'ChitChat\'s Emoji Picker',
 
   tagline: 'An open-source emoji picker UI toolkit for Angular, designed to integrate effortlessly into any project, with full support for mobile and web.',
-  favicon: 'img/logo.png',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://ngx-chitchat.netlify.app/',
