@@ -101,7 +101,7 @@ const config: Config = {
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://ngx-chitchat.netlify.app",
-          "logo": "https://ngx-chitchat.netlify.app/img/logo.svg",
+          "logo": "https://ngx-chitchat.netlify.app/img/library-preview.png",
           "name": "ChitChat's Emoji Picker"
         })
         ,
